@@ -1,3 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    char s[] = "python programming";
+    char ch = 'p';
+    char result[100];
+    int i, j;
+
+    for (i = j = 0; s[i]; i++) {
+        if (s[i] != ch) {
+            result[j++] = s[i];
+        }
+    }
+    result[j] = '\0';
+
+    printf("Original string: %s\n", s);
+    printf("Resulting string: %s\n", result);
+
+    return 0;
+}
+
 
 
 
@@ -23,3 +44,8 @@ int main() {
 
    return 0;
 }
+
+
+
+
+
